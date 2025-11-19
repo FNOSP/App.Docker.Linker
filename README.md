@@ -1,2 +1,28 @@
-# linker
-极具特色的，P2P打洞(UDP+TCP、IPV4+IPV6) + 服务器转发，实现的异地组网、内网穿透。让你那些散落在世界各地的联网设备就像在隔壁房间一样轻松访问。
+<div align="center">
+<p><img src="./readme/logo.png" height="240"></p> 
+
+# Linker
+
+<a href="https://linker.snltty.com">官方网站</a>、<a href="https://linker-doc.snltty.com">使用说明文档</a>、<a href="https://github.com/snltty/linker" target="_blank">原项目</a>
+
+</div>
+
+这是linker项目的fnos(飞牛)应用打包库
+1. 暂时只有docker应用版本，使用snltty/linker-musl镜像，Compressed size不到20MB，卸载后自动删除容器和镜像
+
+
+## 1、[🎖️]发布
+进入src/docker目录，使用
+```
+fnpack build
+```
+或者
+```
+sed -i 's/\r$//' manifest
+sed -i 's/\r$//' cmd/main
+sed -i 's/\r$//' cmd/uninstall_callback
+
+tar -czf app.tgz --transform='s,app/,,g' app/docker app/ui config
+tar -czf linker.fpk --exclude='app' *
+mv linker.fpk linker-docker-x64.fpk
+```
