@@ -3,7 +3,7 @@
 
 # Linker
 
-<a href="https://linker.snltty.com">官方网站</a>、<a href="https://linker-doc.snltty.com">使用说明文档</a>、<a href="https://github.com/snltty/linker" target="_blank">原项目</a>
+<a href="https://linker.snltty.com">应用网站</a>、<a href="https://linker-doc.snltty.com">应用文档</a>、<a href="https://github.com/snltty/linker" target="_blank">原开源项目</a>
 
 </div>
 
